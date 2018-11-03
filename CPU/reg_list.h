@@ -1,0 +1,8 @@
+DEF_REG(rax)
+DEF_REG(rcx)
+DEF_REG(rdx)
+DEF_REG(rbx)
+DEF_REG(rsp)
+DEF_REG(rbp)
+DEF_REG(rsi)
+DEF_REG(rdi)
