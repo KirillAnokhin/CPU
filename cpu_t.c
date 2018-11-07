@@ -200,3 +200,8 @@ static inline void cpu_cmd_pushq(struct cpu_t *cpu)
 {
 	cpu_push(cpu, cpu_rip_qword(cpu));
 }
+
+static inline void cpu_cmd_pushr(struct cpu_t *cpu)
+{
+	cpu_push(cpu, cpu->reg[cpu_rip_byte(cpu)]);
+}

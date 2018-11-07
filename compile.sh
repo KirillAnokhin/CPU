@@ -1,3 +1,4 @@
-gcc -c -g cpu.c
-gcc -c -g main.c
-gcc -g -o cpu cpu.o main.o
+mkdir compile
+gcc -o ./compile/cpu_t.o -c -g cpu_t.c
+gcc -o ./compile/main.o -c -g main.c
+gcc -o ./compile/cpu -g ./compile/cpu_t.o ./compile/main.o
